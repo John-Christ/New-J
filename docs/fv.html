@@ -1,9 +1,13 @@
+<!DOCTYPE html>
+<html>
+
+
 <?php
 $to = "jhonnybrozer@gmail.com";
 $subject = "HTML email";
 
 $message = "
-<html>
+
 <head>
 <title>HTML email</title>
 </head>
@@ -20,7 +24,7 @@ $message = "
 </tr>
 </table>
 </body>
-</html>
+
 ";
 
 // Always set content-type when sending HTML email
@@ -33,3 +37,5 @@ $headers .= 'Cc: myboss@example.com' . "\r\n";
 
 mail($to,$subject,$message,$headers);
 ?>
+
+</html>
